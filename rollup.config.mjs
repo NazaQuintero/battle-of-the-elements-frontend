@@ -3,6 +3,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
+import scss from "rollup-plugin-scss";
 
 import packageJson from "./package.json" assert { type: "json" };
 
@@ -25,8 +26,9 @@ export default {
     resolve(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
-    postcss({
-      extensions: [".css"],
-    }),
+    scss({
+      output: "./lib/css/style.css",
+      failOnError: true,
+    })
   ],
 };
