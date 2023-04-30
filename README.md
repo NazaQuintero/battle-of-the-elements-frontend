@@ -1,1 +1,1 @@
-# battle-of-the-elements-frontend
+# battle-of-the-elements-fe-lib

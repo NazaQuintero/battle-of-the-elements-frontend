@@ -1,2 +1,5 @@
 /stories
+/src
 .storybook
+rollup.config.mjs
+tsconfig.json
