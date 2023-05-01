@@ -1,6 +1,6 @@
 {
   "name": "battle-of-the-elements-fe-library",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "type": "module",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -48,6 +48,7 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "rollup-plugin-scss": "^4.0.0"
+    "rollup-plugin-scss": "^4.0.0",
+    "primereact": "^9.3.1"
   }
 }
